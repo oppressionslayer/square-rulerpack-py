@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "square-rulerpack-py"
+version = "0.3.0"
+description = "The self-initialising quadratic sieve of square-rulerpack 0.3.0 in pure Python (no Rust), with a step-by-step walkthrough for teaching"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Lars Rocha"}]
+dependencies = ["numpy>=1.24", "pandas>=2.0"]
+keywords = ["quadratic-sieve", "siqs", "factorization", "number-theory", "teaching", "rulerpack"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Education",
+]
+
+[project.urls]
+Homepage = "https://github.com/oppressionslayer/square-rulerpack-py"
+"Rust crate" = "https://crates.io/crates/square-rulerpack"
+
+[project.optional-dependencies]
+fast = ["numba>=0.59"]
+test = ["pytest", "sympy"]
+
+[project.scripts]
+square-rulerpack-py = "square_rulerpack_py.__main__:main"
+
+[tool.setuptools]
+packages = ["square_rulerpack_py"]
