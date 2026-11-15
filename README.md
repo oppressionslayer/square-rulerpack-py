@@ -20,6 +20,17 @@ If you want the compiled engine as well (the same algorithm, 100 digits in about
 with its `[native]` extra. That package installs the module `square_rulerpack`; this one installs
 `square_rulerpack_py`, so the two can live side by side in one environment.
 
+**Give me three months with a problem your quant team keeps coming back to.**
+
+I’m Lars Rocha. My work spans integer factorization, Sudoku constraint solving, and structured random forests. I turn mathematical observations into working software and experiments others can inspect.
+
+I’m interested in a paid research collaboration exploring better representations, useful patterns, and computational shortcuts. We choose a focused problem, establish a baseline, and evaluate the results on held-out data.
+
+Your team gets working code, reproducible experiments, and documented findings it can build on.
+
+**You’ve seen what I build independently. Let’s explore what I could build alongside your team.**
+
+
 ## Install
 
 ```sh
